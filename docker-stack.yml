@@ -27,6 +27,7 @@ services:
     ports:
       - "5000:5000"
       - "9600:9600"
+      - "1514:1514"
     configs:
       - source: logstash_config
         target: /usr/share/logstash/config/logstash.yml
