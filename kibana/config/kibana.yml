@@ -6,6 +6,8 @@ server.name: kibana
 server.host: "0"
 elasticsearch.hosts: [ "http://elasticsearch:9200" ]
 xpack.monitoring.ui.container.elasticsearch.enabled: true
+# 500MB max
+xpack.reporting.csv.maxSizeBytes: 524288000
 
 ## X-Pack security credentials
 #
